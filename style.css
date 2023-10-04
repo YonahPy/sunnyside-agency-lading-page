@@ -349,16 +349,5 @@ footer ul a:hover{
     .gallery img{
         height: 100%;
     }
-    .image-transform{
-        order: 1;
-    }
-    .image-stand-out{
-        order: 3;
-    }
-    .graphic{
-        order: 5;
-    }
-    .photograpy{
-        order: 6;
-    }
+    
 }
