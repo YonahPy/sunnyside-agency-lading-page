@@ -52,6 +52,17 @@ nav ul a{
     color: white;
     font-weight: 600;
 }
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background-color: white;
+    margin: 8px;
+    
+}
 .contact{
     border: none;
     border-radius: 20px;
@@ -122,7 +133,9 @@ h1{
 }
 .graphic{
     background-image: url('./assets/desktop/image-graphic-design.jpg');
-    height: 600px;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -141,7 +154,8 @@ h1{
 
 .photograpy{
     background-image: url('./assets/desktop/image-photography.jpg');
-    height: 600px;
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -237,8 +251,101 @@ footer ul a:hover{
     width: 200px;
     justify-content: space-between;
 }
-@media (max-width: 1000px){
+
+@media (max-width: 1100px){
+    nav ul{
+        width: 50vw;
+    }
+}
+
+@media (max-width: 900px){
+    .transform{
+        padding-inline: 40px;
+    }
     .graphic{
-        background-image: url('./assets/mobile/image-graphic-design.jpg');
+        padding: 0px 40px 40px 40px;
+    }
+    .photograpy{
+        padding: 0px 40px 70px 40px;
+    }
+    .testimonials{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 70px;
+    }
+    .testimonials div{
+        padding-inline: 70px;
+    }
+    
+}
+@media (max-width: 768px){
+    
+    .transform{
+        padding-inline: 25px;
+    }
+    .graphic{
+        padding: 0px 25px 40px 25px;
+    }
+    .photograpy{
+        padding: 0px 40px 45px 40px;
+    }
+    nav ul{
+        display: none;
+    }
+    nav{
+        position: relative;
+    }
+    nav ul.active{
+        display: flex;
+        position: absolute;
+        top: 15vw;
+        right: 25vw;
+        background-color: white;
+        flex-direction: column;
+        
+        
+    }
+    
+    nav ul.active li{
+        margin-top: 20px;
+        
+    }
+    .contact{
+        background-color: var(--yellow);
+        
+        margin-block: 20px;
+    }
+    .contact:hover{
+        background-color: hsla(51, 100%, 49%, 0.651);
+        color: var(--desatured-blue);
+    }
+    #arrow{
+        display: none;
+    }
+    nav ul.active a{
+        color: var(--desatured-blue);
+    }
+    
+    .mobile-menu{
+        display: block;
+    }
+}
+@media (max-width: 720px){
+    .section1{
+        grid-template-columns: 1fr;
+        
+    }
+    
+    .section1 div{
+        height: 70vh;
+        align-items: center;
+    }
+    .section1 div img{
+        height: 100%;
+    }
+    .gallery{
+        grid-template-columns: 2fr 2fr;
+    }
+    .gallery img{
+        height: 100%;
     }
 }
