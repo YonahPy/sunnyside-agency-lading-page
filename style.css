@@ -95,6 +95,7 @@ h1{
 
 .section1 div img{
     width: 100%;
+    height: 100%;
 }
 
 .transform{
@@ -347,5 +348,17 @@ footer ul a:hover{
     }
     .gallery img{
         height: 100%;
+    }
+    .image-transform{
+        order: 1;
+    }
+    .image-stand-out{
+        order: 3;
+    }
+    .graphic{
+        order: 5;
+    }
+    .photograpy{
+        order: 6;
     }
 }
